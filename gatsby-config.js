@@ -3,7 +3,7 @@ module.exports = {
     title: `My Escapades With Software Engineering`,
     author: `Anuj Kapoor`,
     description: `blog`,
-    siteUrl: `blog`,
+    siteUrl: `https://github.com/Bearbobs/my-exp-with-SDE`,
     social: {
       twitter: `bearbobs`,
     },
