@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `My Escapades With Software Engineering`,
+    title: `My Escapades With Life`,
     author: `Anuj Kapoor`,
     description: `blog`,
-    siteUrl: `https://github.com/Bearbobs/my-exp-with-SDE`,
+    siteUrl: `https://www.escapades.works`,
     social: {
       twitter: `bearbobs`,
     },
