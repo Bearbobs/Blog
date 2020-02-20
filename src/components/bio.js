@@ -54,7 +54,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>Anuj Kapoor</strong> who works to build useful things.
+        Written by <strong>Anuj Kapoor</strong>.
         {` `}
         <a href={`https://github.com/Bearbobs`}>
           You should follow him on Github
