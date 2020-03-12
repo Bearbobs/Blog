@@ -19,7 +19,7 @@ Silverblue's immutable design is intended to make it more stable, less prone to 
 Silverblue's core technologies have some other helpful features. OS updates are fast, and there's no waiting around for them to install: reboot, as usual, to start using the next version. With Silverblue, it is also possible to roll back to the previous version of the operating system, if something goes wrong.
 
 ### How to install Softwares and Updates?
-It's a common doubt that popped up in my head, as the os is immutable how to will the packages and package management system works on it.
+It's a common doubt that popped up in my head, as the os is immutable how to will the packages and omplted management system works on it.
 Silverblue has different options for installing software, compared with a standard Fedora Workstation (or other package-based Linux distributions). These include:
 
 - Flatpak apps: this is the primary way that (GUI) apps get installed on Silverblue.
