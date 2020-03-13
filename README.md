@@ -8,4 +8,6 @@
 
 [![Heroku](http://heroku-badge.herokuapp.com/?app=agile-plateau-31969&style=flat)]
 
+[![Heroku CI Status](https://agile-plateau-31969.herokuapp.com/last.svg)](https://dashboard.heroku.com/pipelines/1b352c0a-c04b-4d8c-8d00-b321243ce0cc/tests)
+
 Repository for Blogging Experiences.
