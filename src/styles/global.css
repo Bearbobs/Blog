@@ -1,3 +1,10 @@
-html {
+
+  body.light-mode {
     background-color: #fdf6e3;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  body.dark-mode {
+    background-color: #1a1919;
+    color: #999;
   }

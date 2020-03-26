@@ -1,12 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import useDarkMode from 'use-dark-mode';
+import DarkModeToggle from "react-dark-mode-toggle";
+
+import '../styles/global.css'
 import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {
+  const darkMode = useDarkMode(false);
   const rootPath = `${__PATH_PREFIX__}/`
   let header
-  const style={"text-align": "center"}
+  const style = { "text-align": "center" }
   if (location.pathname === rootPath) {
     header = (
       <h1
@@ -58,10 +63,27 @@ const Layout = ({ location, title, children }) => {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
+      <div style={{
+        position: 'fixed',
+        top: '0',
+        left: '0',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        marginTop: '15px',
+        marginLeft : "40px",
+      }}>
+        <DarkModeToggle
+          onChange={darkMode.toggle}
+          checked={darkMode.value}
+          size={80}
+        />
+      </div>
       <header>{header}</header>
       <main>{children}</main>
       <footer style={style}>
-        © {new Date().getFullYear()}, 
+        © {new Date().getFullYear()},
         {` `}
         <a href="https://github.com/Bearbobs/my-exp-with-SDE">My Escapades With Life</a>
       </footer>
