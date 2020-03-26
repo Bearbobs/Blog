@@ -10,9 +10,9 @@ description: Linux Beast for Production Machines
 Recently, I came across this beast of an operating system based on an idea of the immutable operating system.
 This blog post is mainly focused on explaining the creativity and mindset of fedora developers for Silverblue Project, and finally, my review on its use case.
 
-> ### What is an immutable operating system?
-> Immutable OS corresponds to an idea where any package installation does not affect the underlying operating system.
-> This means that every setup is identical to every other setup of the same version. The operating system that is on disk is precisely the same from one machine > to the next, and it never changes as it is used.
+### What is an immutable operating system?
+Immutable OS corresponds to an idea where any package installation does not affect the underlying operating system.
+This means that every setup is identical to every other setup of the same version. The operating system that is on disk is precisely the same from one machine > to the next, and it never changes as it is used.
 
 Silverblue's immutable design is intended to make it more stable, less prone to bugs, and easier to test and develop. Finally, Silverblue's unchanging design also makes it an excellent platform for containerized apps as well as container-based software development. In each case, apps and containers are kept separate from the host system, improving stability and reliability.
 
