@@ -1,7 +1,7 @@
 ---
 title: New Beginnings
 date: "2020-02-15T22:40:32.169Z"
-description: Greetings, hi, BearBobs greets you.
+description: Greetings, Hi, BearBobs greets you.
 ---
 
 
@@ -14,6 +14,6 @@ description: Greetings, hi, BearBobs greets you.
 - console.log("Hello World")
 - print("Hello World")
 
-Hello, This is Anuj, another Software Engineer.
+Hello, This is Anuj,a 21 year old who is working as a Software Engineer.
 I started this blog to document my experiences in Engineering Solutions,
 which will be used in the real world, and majorly to improve my writing skills.
