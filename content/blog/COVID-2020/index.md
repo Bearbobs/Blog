@@ -43,4 +43,5 @@ I attach some screenshots of the events down here.
 
 Overall it was an excellent experience for me, but not as good as the onsite event, which was about to happen.
 In respect to COVID-19, keep yourself isolated and regularly was your hand.
+
 See you guys at the next one!

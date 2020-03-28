@@ -54,10 +54,10 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>Anuj Kapoor</strong>.
-        {` `}
+        Written by <a href={`http://bearbobs.github.io/`}><strong>Anuj Kapoor</strong>.</a>
+        {` `} You should follow him on {` `}
         <a href={`https://github.com/Bearbobs`}>
-          You should follow him on Github
+          Github
         </a>
       </p>
     </div>
