@@ -10,4 +10,4 @@ http://escapades.works/
 
 [![Heroku](http://heroku-badge.herokuapp.com/?app=agile-plateau-31969&style=flat)](https://agile-plateau-31969.herokuapp.com)
 
-Repository for Blogging Experiences.
+Simple Blog implimentation using React and Graphql
