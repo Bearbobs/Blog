@@ -74,12 +74,13 @@ const Layout = ({ location, title, children }) => {
         marginTop: '15px',
         marginLeft : "40px",
       }}>
-        <DarkModeToggle
+        
+      </div>
+      <DarkModeToggle
           onChange={darkMode.toggle}
           checked={darkMode.value}
           size={80}
         />
-      </div>
       <header>{header}</header>
       <main>{children}</main>
       <footer style={style}>
