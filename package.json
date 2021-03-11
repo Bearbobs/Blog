@@ -29,6 +29,7 @@
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-remark": "^2.6.48",
     "gatsby-transformer-sharp": "^2.3.13",
+    "husky": "^5.1.3",
     "prismjs": "^1.23.0",
     "react": "^16.12.0",
     "react-dark-mode-toggle": "0.0.3",
