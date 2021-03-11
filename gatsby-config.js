@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `My Escapades With Life`,
+    title: `My Escapades With Tech`,
     author: `Anuj Kapoor`,
     description: `blog`,
     siteUrl: `https://www.escapades.works`,
@@ -81,6 +81,25 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://escapades.tech`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-yandex-metrica`,
+      options: {
+        trackingId: "73499125",
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        trackHash: true,
+
+        // Detailed recordings of user activity on the site: mouse movement, scrolling, and clicks.
+        webvisor: true,
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
