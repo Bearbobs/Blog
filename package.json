@@ -1,67 +1,115 @@
 {
-  "name": "gatsby-starter-blog",
-  "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "dependencies": {
-    "gatsby": "^2.19.7",
-    "gatsby-cli": "^2.12.80",
-    "gatsby-image": "^2.2.39",
-    "gatsby-plugin-canonical-urls": "^2.2.3",
-    "gatsby-plugin-feed": "^2.3.26",
-    "gatsby-plugin-google-analytics": "^2.1.34",
-    "gatsby-plugin-manifest": "^2.2.39",
-    "gatsby-plugin-offline": "^3.0.32",
-    "gatsby-plugin-react-helmet": "^3.1.21",
-    "gatsby-plugin-sharp": "^2.4.3",
-    "gatsby-plugin-typography": "^2.3.21",
-    "gatsby-plugin-use-dark-mode": "^1.1.2",
-    "gatsby-plugin-yandex-metrica": "^0.1.3-check",
-    "gatsby-remark-copy-linked-files": "^2.1.36",
-    "gatsby-remark-images": "^3.1.42",
-    "gatsby-remark-prismjs": "^3.3.30",
-    "gatsby-remark-responsive-iframe": "^2.2.31",
-    "gatsby-remark-smartypants": "^2.1.20",
-    "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-transformer-remark": "^2.6.48",
-    "gatsby-transformer-sharp": "^2.3.13",
-    "husky": "^5.1.3",
-    "prismjs": "^1.23.0",
-    "react": "^16.12.0",
-    "react-dark-mode-toggle": "0.0.3",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "react-typography": "^0.16.19",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75",
-    "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19",
-    "use-dark-mode": "^2.3.1"
-  },
-  "devDependencies": {
-    "prettier": "^1.19.1"
-  },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+ "name": "gatsby-starter-blog",
+ "private": true,
+ "description": "A starter for a blog powered by Gatsby and Markdown",
+ "version": "0.1.0",
+ "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+ "bugs": {
+  "url": "https://github.com/gatsbyjs/gatsby/issues"
+ },
+ "dependencies": {
+  "gatsby": "^2.19.7",
+  "gatsby-cli": "^2.12.80",
+  "gatsby-image": "^2.2.39",
+  "gatsby-plugin-canonical-urls": "^2.2.3",
+  "gatsby-plugin-feed": "^2.3.26",
+  "gatsby-plugin-google-analytics": "^2.1.34",
+  "gatsby-plugin-manifest": "^2.2.39",
+  "gatsby-plugin-offline": "^3.0.32",
+  "gatsby-plugin-react-helmet": "^3.1.21",
+  "gatsby-plugin-sharp": "^2.4.3",
+  "gatsby-plugin-typography": "^2.3.21",
+  "gatsby-plugin-use-dark-mode": "^1.1.2",
+  "gatsby-plugin-yandex-metrica": "^0.1.3-check",
+  "gatsby-remark-copy-linked-files": "^2.1.36",
+  "gatsby-remark-images": "^3.1.42",
+  "gatsby-remark-prismjs": "^3.3.30",
+  "gatsby-remark-responsive-iframe": "^2.2.31",
+  "gatsby-remark-smartypants": "^2.1.20",
+  "gatsby-source-filesystem": "^2.1.46",
+  "gatsby-transformer-remark": "^2.6.48",
+  "gatsby-transformer-sharp": "^2.3.13",
+  "husky": "^5.1.3",
+  "prismjs": "^1.23.0",
+  "react": "^16.12.0",
+  "react-dark-mode-toggle": "0.0.3",
+  "react-dom": "^16.12.0",
+  "react-helmet": "^5.2.1",
+  "react-typography": "^0.16.19",
+  "typeface-merriweather": "0.0.72",
+  "typeface-montserrat": "0.0.75",
+  "typography": "^0.16.19",
+  "typography-theme-wordpress-2016": "^0.16.19",
+  "use-dark-mode": "^2.3.1"
+ },
+ "eslintConfig": {
+  "extends": [
+   "react-app",
+   "plugin:prettier/recommended"
+  ]
+ },
+ "prettier": {
+  "printWidth": 90,
+  "bracketSpacing": true,
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "useTabs": true,
+  "tabWidth": 2,
+  "semi": true,
+  "jsxBracketSameLine": true,
+  "endOfLine": "auto"
+ },
+ "husky": {
+  "hooks": {
+   "pre-commit": "lint-staged"
   }
+ },
+ "lint-staged": {
+  "*.+(js|jsx)": [
+   "eslint --fix"
+  ],
+  "*.+(json|css|md)": [
+   "prettier --write"
+  ]
+ },
+ "browserslist": {
+  "production": [
+   ">0.2%",
+   "not dead",
+   "not op_mini all"
+  ],
+  "development": [
+   "last 1 chrome version",
+   "last 1 firefox version",
+   "last 1 safari version"
+  ]
+ },
+ "devDependencies": {
+  "eslint-config-prettier": "^6.10.1",
+  "eslint-plugin-prettier": "^3.1.2",
+  "husky": "^4.2.3",
+  "lint-staged": "^10.1.1",
+  "prettier": "^2.0.2",
+  "react-test-renderer": "^16.13.1"
+ },
+ "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+ "keywords": [
+  "gatsby"
+ ],
+ "license": "MIT",
+ "main": "n/a",
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+ },
+ "scripts": {
+  "build": "gatsby build",
+  "develop": "gatsby develop",
+  "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+  "start": "npm run develop",
+  "serve": "gatsby serve",
+  "clean": "gatsby clean",
+  "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+ }
 }
