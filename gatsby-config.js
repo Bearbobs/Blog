@@ -1,108 +1,96 @@
+const path = require('path')
+const config = require('./data/siteConfig')
+
 module.exports = {
   siteMetadata: {
-    title: `My Escapades With Tech`,
-    author: `Anuj Kapoor`,
-    description: `blog`,
-    siteUrl: `https://www.escapades.works`,
-    social: {
-      twitter: `bearbobs`,
-    },
+    title: config.siteTitle,
+    author: config.authorName,
+    description: config.siteDescription,
+    ...config,
   },
+  pathPrefix: config.pathPrefix,
   plugins: [
     {
-      resolve: "gatsby-plugin-use-dark-mode",
+      resolve: `gatsby-source-filesystem`,
       options: {
-         classNameDark: "dark-mode",
-         classNameLight: "light-mode",
-         storageKey: "darkMode",
-         minify: true,
+        name: 'posts',
+        path: 'content/posts',
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        name: 'pages',
+        path: 'content/pages',
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
+        name: 'images',
+        path: 'content/images',
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-page-creator`,
       options: {
-        plugins: [
+        path: path.join(__dirname, `src`, `pages`),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          default: require.resolve('./src/templates/page.js'),
+        },
+        gatsbyRemarkPlugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 590,
+              linkImagesToOriginal: false,
+              withWebp: true,
             },
           },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
+          { resolve: 'gatsby-remark-prismjs' },
+          { resolve: 'gatsby-remark-responsive-iframe' },
+          { resolve: 'gatsby-remark-copy-linked-files' },
+          { resolve: 'gatsby-remark-smartypants' },
+          { resolve: 'gatsby-remark-autolink-headers' },
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    // Reminder (https://github.com/gatsbyjs/gatsby/issues/15486#issuecomment-509405867)
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        plugins: [`gatsby-remark-images`],
       },
     },
-    `gatsby-plugin-feed`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        name: config.siteTitle,
+        short_name: config.siteTitle,
+        start_url: config.pathPrefix,
+        background_color: config.background_color,
+        theme_color: config.theme_color,
+        display: config.display,
+        icon: config.icon,
       },
     },
-    `gatsby-plugin-react-helmet`,
+    // https://www.gatsbyjs.org/docs/themes/converting-a-starter/#transpiling-your-theme-with-webpack
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-plugin-compile-es6-packages',
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        modules: ['gatsby-starter-morning-dew'],
       },
     },
-    {
-      resolve: `gatsby-plugin-canonical-urls`,
-      options: {
-        siteUrl: `https://escapades.tech`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-yandex-metrica`,
-      options: {
-        trackingId: "73499125",
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        trackHash: true,
-
-        // Detailed recordings of user activity on the site: mouse movement, scrolling, and clicks.
-        webvisor: true,
-      }
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
