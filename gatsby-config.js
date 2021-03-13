@@ -92,5 +92,11 @@ module.exports = {
         modules: ['gatsby-starter-morning-dew'],
       },
     },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://escapades.tech`,
+      },
+    },
   ],
 }

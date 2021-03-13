@@ -12,7 +12,7 @@ cover: ./cover.jpeg
 imageShare: ./cover.jpeg
 tags: ['fake']
 translations:
-  - link: 'https://www.maxpou.fr/about'
+  - link: 'https://escapades.works/'
     language: 'french'
     hreflang: fr
 ---

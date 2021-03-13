@@ -1,24 +1,22 @@
 {
-  "name": "gatsby-starter-morning-dew",
-  "version": "0.0.0-development",
-  "description": "A Gatsby theme/starter to build lightning-fast blog/websites",
+  "name": "escapades.tech",
+  "version": "1.0.0-development",
+  "description": "yet another tech blog",
   "keywords": [
     "blog",
-    "gatsby",
-    "gatsby-plugin",
-    "gatsby-theme",
-    "starter"
+    "tech",
+    "life"
   ],
-  "homepage": "https://github.com/maxpou/gatsby-starter-morning-dew#readme",
+  "homepage": "https://github.com/Bearbobs/Blog#readme",
   "bugs": {
-    "url": "https://github.com/maxpou/gatsby-starter-morning-dew/issues"
+    "url": "https://github.com/Bearbobs/Blog/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxpou/gatsby-starter-morning-dew.git"
+    "url": "https://github.com/Bearbobs/Blog.git"
   },
   "license": "MIT",
-  "author": "Maxence Poutord <maxence.poutord@gmail.com>",
+  "author": "Anuj Kapoor",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
@@ -40,6 +38,7 @@
     "disqus-react": "^1.0.8",
     "gatsby": "^3.0.0",
     "gatsby-image": "^3.0.0",
+    "gatsby-plugin-canonical-urls": "^3.0.0",
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
     "gatsby-plugin-manifest": "^3.0.0",
     "gatsby-plugin-mdx": "^2.0.0",

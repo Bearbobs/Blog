@@ -127,34 +127,6 @@ const Footer = () => {
           <h3 className="footer-title">
             {authorName} © {new Date().getFullYear()}
           </h3>
-          <p className="footer-item-text">
-            Built with{' '}
-            <a className="footer-link" href="https://www.gatsbyjs.org">
-              Gatsby
-            </a>
-            .
-          </p>
-          <p className="footer-item-text">
-            Theme using{' '}
-            <a
-              className="footer-link"
-              href="https://github.com/maxpou/gatsby-starter-morning-dew"
-            >
-              gatsby-starter-morning-dew
-            </a>
-            .
-          </p>
-          <p className="footer-item-text">
-            Hosted with{' '}
-            <span className="footer-heart" role="img" aria-label="Love">
-              ❤
-            </span>{' '}
-            by{' '}
-            <a className="footer-link" href={websiteHost.url}>
-              {websiteHost.name}
-            </a>
-            .
-          </p>
         </div>
         {footerLinks.map((column, i) => {
           return <FooterColumn column={column} key={`footer-column-${i}`} />

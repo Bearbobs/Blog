@@ -11,6 +11,7 @@ const colors = {
   grey800: '#1C1D20',
   grey900: '#131315',
 
+  solr: '#fdf6e3',
   white: '#ffffff',
   yellow: '#ffdc4e',
   lightYellow: '#f9e892',
@@ -31,11 +32,11 @@ export const COLORS = {
     dark: '#c6d8e0',
   },
   siteBackground: {
-    light: '#f4f8fb',
+    light: colors.solr,
     dark: colors.grey500,
   },
   wrapperBackground: {
-    light: colors.white,
+    light: colors.solr,
     dark: colors.grey500,
   },
   secondaryContentBackground: {

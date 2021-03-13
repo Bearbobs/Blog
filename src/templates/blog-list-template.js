@@ -57,6 +57,7 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
+            description
             tags
             language
             slug
