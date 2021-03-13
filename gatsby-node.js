@@ -25,6 +25,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fileAbsolutePath
             frontmatter {
               title
+              description
               slug
               tags
               language

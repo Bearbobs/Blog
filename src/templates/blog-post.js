@@ -12,6 +12,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.post
     const { previous, next } = this.props.pageContext
+    console.log(this.props)
 
     return (
       <Layout location={this.props.location}>
@@ -56,6 +57,7 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
+        description
         date
         slug
         language

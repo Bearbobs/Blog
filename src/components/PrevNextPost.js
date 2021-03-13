@@ -83,6 +83,7 @@ const PrevNextPost = props => {
             tags,
             cover,
             title,
+            description,
             slug,
             language,
           } = article.node.frontmatter
@@ -102,7 +103,7 @@ const PrevNextPost = props => {
                     </h2>
                   </header>
                   <section>
-                    <p>{excerpt}</p>
+                    <p>{description || excerpt}</p>
                   </section>
                   <footer>
                     <ReadingTime min={timeToRead} />
