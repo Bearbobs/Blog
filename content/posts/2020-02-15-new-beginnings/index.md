@@ -4,6 +4,7 @@ slug: hello-world
 cover: ./cover.jpg
 description: Greetings, Hi, Bearbobs greets you.  
 generate-card: True
+imageShare: ./hello-world-share.png
 date: 2020-02-15
 language: en
 tags:

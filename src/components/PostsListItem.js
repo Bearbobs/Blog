@@ -50,7 +50,15 @@ const FooterLine = styled.div`
 `
 
 const PostsListItem = props => {
-  const { title, excerpt,description, slug, language, tags, timeToRead } = props
+  const {
+    title,
+    excerpt,
+    description,
+    slug,
+    language,
+    tags,
+    timeToRead,
+  } = props
   const { defaultLang } = useSiteMetadata()
 
   return (

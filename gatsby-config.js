@@ -101,7 +101,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-yandex-metrica`,
       options: {
-        trackingId: "73499125",
+        trackingId: '73499125',
         clickmap: true,
         trackLinks: true,
         accurateTrackBounce: true,
@@ -109,7 +109,7 @@ module.exports = {
 
         // Detailed recordings of user activity on the site: mouse movement, scrolling, and clicks.
         webvisor: true,
-      }
-    }
+      },
+    },
   ],
 }

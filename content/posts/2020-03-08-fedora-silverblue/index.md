@@ -4,6 +4,7 @@ description: Linux Beast for Production Machines
 slug: fedora-silverblue
 cover: ./cover.png
 generate-card: True
+imageShare: ./fedora-silverblue-share.png
 date: 2020-03-08
 language: en
 tags:

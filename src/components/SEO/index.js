@@ -39,11 +39,7 @@ const SEO = props => {
 
         {/* Each language version must list itself + all other language versions */}
         {internalTranslations.length > 0 && (
-          <link
-            rel="alternate"
-            hreflang={lang}
-            href={url}
-          />
+          <link rel="alternate" hreflang={lang} href={url} />
         )}
         {internalTranslations.map(translation => (
           <link
