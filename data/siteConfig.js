@@ -3,7 +3,7 @@ module.exports = {
   siteDescription: 'Blog about Tech, Career and Life',
   authorName: 'Anuj Kapoor',
   twitterUsername: 'AnujKaps',
-  authorAvatar: 'avatar.jpg', // file in content/images
+  authorAvatar: 'avatar.JPG', // file in content/images
   defaultLang: 'en', // show flag if lang is not default. Leave empty to enable flags in post lists
   authorDescription: `
   Software Engineer, hailing from India. Trying to document his experiences.
