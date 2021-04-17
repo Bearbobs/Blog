@@ -79,12 +79,12 @@ const FooterWrapper = styled.footer`
   }
 
   .footer-item-text {
-    padding: 0.1rem 0;
+    padding: 0.2rem 0;
     color: var(--color-white);
   }
 
   .footer-item-icon {
-    padding: 0.6rem 0;
+    padding: 1rem 0;
     color: var(--color-white);
   }
 
