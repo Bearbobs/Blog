@@ -15,7 +15,7 @@ Between the summer of 1665 and the spring of 1667, Isaac Newton made two long vi
 
 ## Where I have been ...
 
-Me who got endless time and freedom to pursue my personal endevaours, had my share of different explorations,with bullets:
+Me who got endless time and freedom to pursue my personal endeavors, had my share of different explorations,with bullets:
 
 * 🎓 Started the year as a college student and became alumini overnight.
 
@@ -23,7 +23,7 @@ Me who got endless time and freedom to pursue my personal endevaours, had my sha
 
 * 👷 Had a constant love-hate relationship with remote work.
 
-* 🧑‍🍳 Learnt some basic cooking 
+* 🧑‍🍳 Learned  some basic cooking 
 
 * 👨‍👦‍👦 Met a lot of people and friends online, for some of them it was literally impossible without the pandemic
 
@@ -33,7 +33,7 @@ Me who got endless time and freedom to pursue my personal endevaours, had my sha
 
 ## Conclusion, Idk how to write blogs.xD
 
-Using time efficiently, doesn't always means being productive, having fair share of explorations is important. Last year has been a whole new experience be it life, career or technical escapades. 
+Using time efficiently doesn't always mean being productive, having fair share of explorations is important. Last year has been a whole new experience be it life, career or technical escapades. 
 
 2020 if nothing, gave me a good port to host my internal services on 😆
 
