@@ -6,7 +6,7 @@ module.exports = {
   authorAvatar: 'avatar.JPG', // file in content/images
   defaultLang: 'en', // show flag if lang is not default. Leave empty to enable flags in post lists
   authorDescription: `
-  Software Engineer, hailing from India. Trying to document his experiences.
+  Software Engineer, from India. Trying to document his experiences.
   `,
   siteUrl: 'https://escapades.tech',
   disqusSiteUrl: 'https://escapades.tech',

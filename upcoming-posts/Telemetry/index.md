@@ -3,7 +3,7 @@ title: Telemetry(Google Analytics)
 date: "2020-08-09T18:56:32.169Z"
 description: invasive and unnecessary tracking.
 ---
-## Why not Google Analytics
+## Why not Google Analytics ?
 
 Google Analytics lets us keep tabs on that data, but Google tracks a whole lot more than that, too. Frankly, I don’t want access to that data—or to contribute towards it being collected. Remember, Google’s incentive is to collect as much information as possible from people visiting as many sites as possible—and using Google Analytics directly helps them do that.
 
