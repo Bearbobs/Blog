@@ -83,6 +83,11 @@ const FooterWrapper = styled.footer`
     color: var(--color-white);
   }
 
+  .footer-item-icon {
+    padding: 0.6rem 0;
+    color: var(--color-white);
+  }
+
   .footer-header {
     order: 1;
     margin: 0 0.25rem;
@@ -122,7 +127,7 @@ const Footer = () => {
             </a>
             .
           </p>
-          <p className="footer-item-text">
+          <p className="footer-item-icon">
             <SocialWrapper>
                 {SOCIAL_LINKS.map(({ url, text, Icon }) => (
                   <a href={url} key={url}>
