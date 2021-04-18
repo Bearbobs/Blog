@@ -28,7 +28,7 @@ Taking example of our data-search product, data is updated daily and we have to 
 
 code sample:
 
-`test.sh` a simple bash script to test the service and sending out results to slack, which eases the process of not referring to a dashboard for the same
+`test.sh` a simple bash script to test the service and send out results to slack, which eases the process of not referring to a dashboard for the same
 
 ```
     #!/bin/bash
@@ -89,7 +89,7 @@ Keeps track of production infrastructure, and give health checks if utilization 
 * One of team member uses this to keep track of indexing for one of the service
 
 
-Possibilities are endless. These processes apply well for early-stage startups but might get out of hand easily for managing large infrastructure. But I think similar pipelines will help to catch those production and tailor your products in line with the expectations of your clients. 
+Possibilities are endless. These processes apply well for early-stage startups but might get out of hand easily for managing large infrastructure. But I think similar pipelines will help to catch those production bugs and tailor your products in line with the expectations of your clients. 
 
 Do share feedbacks and some better pipelines you can think of
 
