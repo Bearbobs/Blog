@@ -15,7 +15,7 @@ tags:
 
 It's every engineer's dream to deliver bug-free code, having a constant eye for catching those edge cases is the most important part to reach that. Working on a data-search product for a year, I have realized regular testing and health checks are quite important regularly just to make sure general sanity for the product.
 
-Slack has been an important tool for us, not only for communication but also for delivering good products. Initially used as a tool to maintain communication among the team, I have thought of ways in which we can integrate slack for having the ease of consideration of tests and feedbacks at the dev level.
+Slack has been an important tool for us, not only for communication but also for delivering good products. Initially used as a tool to maintain communication among the team, I have thought of ways in which we can integrate slack for having the ease of consideration of tests and feedbacks at the dev level. It helps in collating everything in a single place , spoilers: slack 🙊
 
 Most of the processes, I have worked on, uses slack just to notify about the results. One can use any other tool of choice to replicate the same. But slack's bot network was quite helpful in making this easy to implement and scalable. I have use slack api python client, directly using api and other clients also work.
 
@@ -89,7 +89,7 @@ Keeps track of production infrastructure, and give health checks if utilization 
 * One of team member uses this to keep track of indexing for one of the service
 
 
-Possibilities are endless. These processes apply well for early-stage startups but might get out of hand easily for managing large infrastructure. But I think similar pipelines will help to catch those production and tailor your products in line with the expectations of your clients.
+Possibilities are endless. These processes apply well for early-stage startups but might get out of hand easily for managing large infrastructure. But I think similar pipelines will help to catch those production and tailor your products in line with the expectations of your clients. 
 
 Do share feedbacks and some better pipelines you can think of
 
