@@ -9,6 +9,7 @@ tags:
     - life
     - time
     - "2021"
+    - random
 ---
 
 Between the summer of 1665 and the spring of 1667, Isaac Newton made two long visits to Woolsthorpe in order to escape the plague affecting Cambridge. The bubonic ‘Great Plague’ of 1665–6 was the worst outbreak of plague in England. Issac did some amazing experiments with prism,hyperbola and gravity(famous apple incident)
@@ -33,9 +34,9 @@ Me who got endless time and freedom to pursue my personal endeavors, had my shar
 
 ## Conclusion, Idk how to write blogs.xD
 
-Using time efficiently doesn't always mean being productive, having fair share of explorations is important. Last year has been a whole new experience be it life, career or technical escapades. 
+Using time efficiently doesn't always mean being productive, having a fair share of explorations is important. Last year has been a whole new experience be it life, career or technical escapades. 
 
-2020 if nothing, gave me a good port to host my internal services on 😆
+> 2020 if nothing gave me a good port to host my internal services on 😆
 
 I am trying to get back to blogging again. I think bringing structure to the week is important, will try to have a weekly and biweekly schedule from now.
 

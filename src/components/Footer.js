@@ -2,14 +2,14 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import useSiteMetadata from '../hooks/use-site-config'
-import {SOCIAL_LINKS} from './Social.js';
+import { SOCIAL_LINKS } from './Social.js'
 
 const SocialWrapper = styled.span`
 > a {
   &:not(:first-child) {
     margin-left: 1.5rem;
   }
-`;
+`
 
 const AccessibleText = styled.span`
   position: absolute;
@@ -20,7 +20,7 @@ const AccessibleText = styled.span`
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 1;
-`;
+`
 
 const FooterWrapper = styled.footer`
   text-align: center;
@@ -119,26 +119,23 @@ const Footer = () => {
           </p>
           <p className="footer-item-text">
             {' '}
-            <a
-              className="footer-link"
-              href="mailto:kapoor.anuj0@gmail.com"
-            >
+            <a className="footer-link" href="mailto:kapoor.anuj0@gmail.com">
               Contact me : <b>kapoor.anuj0@gmail.com</b>
             </a>
             .
           </p>
           <p className="footer-item-icon">
             <SocialWrapper>
-                {SOCIAL_LINKS.map(({ url, text, Icon }) => (
-                  <a href={url} key={url}>
-                    <Icon size={28} />
-                    <AccessibleText>{text}</AccessibleText>
-                  </a>
-                ))}
+              {SOCIAL_LINKS.map(({ url, text, Icon }) => (
+                <a href={url} key={url}>
+                  <Icon size={28} />
+                  <AccessibleText>{text}</AccessibleText>
+                </a>
+              ))}
             </SocialWrapper>
           </p>
           <p className="footer-item-text">
-          ____________________________________________
+            ____________________________________________
           </p>
           <h3 className="footer-item-text">
             {authorName} © {new Date().getFullYear()}
