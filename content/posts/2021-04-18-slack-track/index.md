@@ -17,7 +17,7 @@ It's every engineer's dream to deliver bug-free code, having a constant eye for 
 
 Slack has been an important tool for us, not only for communication but also for delivering good products. Initially used as a tool to maintain communication among the team, I have thought of ways in which we can integrate slack for having the ease of consideration of tests and feedbacks at the dev level. It helps in collating everything in a single place , spoilers: slack 🙊
 
-Most of the processes, I have worked on, uses slack just to notify about the results. One can use any other tool of choice to replicate the same. But slack's bot network was quite helpful in making this easy to implement and scalable. I have use slack api python client, directly using api and other clients also work.
+Most of the processes, I have worked on, uses slack just to notify about the results. One can use any other tool of choice to replicate the same. But slack's bot network was quite helpful in making this easy to implement and scalable. I have used slack api python client, directly using api and other clients also work.
 
 
 ## Example Pipelines -
