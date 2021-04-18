@@ -1,4 +1,4 @@
-import { Twitter, Linkedin, Instagram, GitHub } from 'react-feather';
+import { Twitter, Linkedin, Instagram, GitHub } from 'react-feather'
 
 export const SOCIAL_LINKS = [
   {
@@ -21,4 +21,4 @@ export const SOCIAL_LINKS = [
     text: 'Follow me on GitHub',
     Icon: GitHub,
   },
-];
+]
