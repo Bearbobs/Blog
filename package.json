@@ -63,7 +63,7 @@
     "react-feather": "^2.0.9",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.2.0",
-    "terser": "^4.6.11"
+    "terser": "^4.8.1"
   },
   "devDependencies": {
     "lighthousebot": "https://github.com/GoogleChromeLabs/lighthousebot",
