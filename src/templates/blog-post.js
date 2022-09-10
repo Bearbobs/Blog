@@ -12,7 +12,6 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.post
     const { previous, next } = this.props.pageContext
-    console.log(this.props)
 
     return (
       <Layout location={this.props.location}>
@@ -20,9 +19,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.excerpt}
           cover={post.frontmatter.cover && post.frontmatter.cover.publicURL}
-          imageShare={
-            post.frontmatter.imageShare && post.frontmatter.imageShare.publicURL
-          }
+          imageShare={post.frontmatter.imageShare && post.frontmatter.imageShare.publicURL}
           lang={post.frontmatter.language}
           translations={post.frontmatter.translations}
           path={post.frontmatter.slug}
@@ -63,9 +60,6 @@ export const pageQuery = graphql`
         language
         tags
         cover {
-          publicURL
-        }
-        imageShare {
           publicURL
         }
         translations {
